@@ -1,0 +1,398 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/samarnashaat/task-one/blob/main/session1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "num1 = 3\n",
+        "num2 = 4\n",
+        "num3 = 5\n",
+        "\n",
+        "print(\"1a:\", num1 + num2)\n",
+        "print(\"1b:\", num3 - num1)\n",
+        "print(\"1c:\", num1 * (num2 + num3))\n",
+        "print(\"1d:\", num1 * num2 + num3)\n",
+        "print(\"1e:\", num3 / num1)\n",
+        "print(\"1f:\", num3 // num1)\n",
+        "print(\"1g:\", num3 % num1)\n",
+        "\n",
+        "\n",
+        "num1 = float(num1)\n",
+        "num2 = float(num2)\n",
+        "num3 = float(num3)\n",
+        "\n",
+        "print(\"\\nFloat results:\")\n",
+        "print(\"1a:\", num1 + num2)\n",
+        "print(\"1b:\", num3 - num1)\n",
+        "print(\"1c:\", num1 * (num2 + num3))\n",
+        "print(\"1d:\", num1 * num2 + num3)\n",
+        "print(\"1e:\", num3 / num1)\n",
+        "print(\"1f:\", num3 // num1)\n",
+        "print(\"1g:\", num3 % num1)"
+      ],
+      "metadata": {
+        "id": "tow7wFLBYC5E",
+        "outputId": "8361d64e-9b54-432e-9ad0-a7654d7af545",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1a: 7\n",
+            "1b: 2\n",
+            "1c: 27\n",
+            "1d: 17\n",
+            "1e: 1.6666666666666667\n",
+            "1f: 1\n",
+            "1g: 2\n",
+            "\n",
+            "Float results:\n",
+            "1a: 7.0\n",
+            "1b: 2.0\n",
+            "1c: 27.0\n",
+            "1d: 17.0\n",
+            "1e: 1.6666666666666667\n",
+            "1f: 1.0\n",
+            "1g: 2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "x, y, z, g = 1, 2, 3, 4\n",
+        "print(\"\\n2a:\", x + y / z * g)\n",
+        "print(\"2b:\", y * z)"
+      ],
+      "metadata": {
+        "id": "94z2c3uAoiri",
+        "outputId": "8bc28459-a4cf-4215-d7bc-71fc2792c32a",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "2a: 3.6666666666666665\n",
+            "2b: 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "str_a = \"Python\"\n",
+        "str_b = \" is a \"\n",
+        "str_c = \"times fun language\"\n",
+        "num = 1000\n",
+        "\n",
+        "str_ab = str_a + str_b + str(num) + \" \" + str_c\n",
+        "print(\"\\n3a:\", str_ab)\n",
+        "\n",
+        "str_a10 = str_a * 10\n",
+        "print(\"3b:\", str_a10)"
+      ],
+      "metadata": {
+        "id": "htzmyX-YopzU",
+        "outputId": "b1d7e1e7-5ade-40eb-9e1c-8bb297143ec4",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "3a: Python is a 1000 times fun language\n",
+            "3b: PythonPythonPythonPythonPythonPythonPythonPythonPythonPython\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "if num % 2 == 0:\n",
+        "    print(\"Even\")\n",
+        "else:\n",
+        "    print(\"Odd\")"
+      ],
+      "metadata": {
+        "id": "DX2yHooOoud8",
+        "outputId": "1ba36eef-1b14-4130-86a7-df0df0c47905",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 4\n",
+            "Even\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"Enter student score (0-100): \"))\n",
+        "if score >= 50:\n",
+        "    print(\"Pass\")\n",
+        "else:\n",
+        "    print(\"Fail\")"
+      ],
+      "metadata": {
+        "id": "CTKwlqvCqdBb",
+        "outputId": "6f59d923-8351-40b0-ccf1-416710f42e21",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter student score (0-100): 90\n",
+            "Pass\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter first number: \"))\n",
+        "b = int(input(\"Enter second number: \"))\n",
+        "c = int(input(\"Enter third number: \"))\n",
+        "print(\"Largest number is:\", max(a, b, c))"
+      ],
+      "metadata": {
+        "id": "li-w6b0sqj7B",
+        "outputId": "90b2ea24-fcc3-411c-d078-df523a846c8d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 3\n",
+            "Enter second number: 2\n",
+            "Enter third number: 9\n",
+            "Largest number is: 9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1, 11):\n",
+        "    print(i)"
+      ],
+      "metadata": {
+        "id": "J-mHHR7Mqt2k",
+        "outputId": "516471d3-74ac-44d8-c4eb-ae42872fcb5e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "score = int(input(\"Enter score (0-100): \"))\n",
+        "if 90 <= score <= 100:\n",
+        "    print(\"Grade: A\")\n",
+        "elif 80 <= score <= 89:\n",
+        "    print(\"Grade: B\")\n",
+        "elif 70 <= score <= 79:\n",
+        "    print(\"Grade: C\")\n",
+        "elif 60 <= score <= 69:\n",
+        "    print(\"Grade: D\")\n",
+        "else:\n",
+        "    print(\"Grade: F\")"
+      ],
+      "metadata": {
+        "id": "NUKnegr1qzz3",
+        "outputId": "576262bb-73ad-4883-b90e-ea90b9192c27",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter score (0-100): 90\n",
+            "Grade: A\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number for multiplication table: \"))\n",
+        "for i in range(1, 11):\n",
+        "    print(f\"{num} x {i} = {num * i}\")"
+      ],
+      "metadata": {
+        "id": "wC3BPdwzrBOj",
+        "outputId": "f1120b12-1faa-45f9-dd70-de74081ace45",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number for multiplication table: 3\n",
+            "3 x 1 = 3\n",
+            "3 x 2 = 6\n",
+            "3 x 3 = 9\n",
+            "3 x 4 = 12\n",
+            "3 x 5 = 15\n",
+            "3 x 6 = 18\n",
+            "3 x 7 = 21\n",
+            "3 x 8 = 24\n",
+            "3 x 9 = 27\n",
+            "3 x 10 = 30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total = 0\n",
+        "for i in range(1, 51):\n",
+        "    if i % 2 == 0:\n",
+        "        total += i\n",
+        "print(\"Sum of even numbers from 1 to 50 is:\", total)"
+      ],
+      "metadata": {
+        "id": "jXkRYOixrKDb",
+        "outputId": "fcccc675-bc22-4538-80fa-154cfe3dfe45",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sum of even numbers from 1 to 50 is: 650\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number for factorial: \"))\n",
+        "factorial = 1\n",
+        "i = 1\n",
+        "while i <= num:\n",
+        "    factorial *= i\n",
+        "    i += 1\n",
+        "print(f\"Factorial of {num} is: {factorial}\")"
+      ],
+      "metadata": {
+        "id": "JhjnTqeLrPHl",
+        "outputId": "c0ac0722-59bd-4bac-be5c-a558b2245d84",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number for factorial: 2\n",
+            "Factorial of 2 is: 2\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
